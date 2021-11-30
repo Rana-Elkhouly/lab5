@@ -1,0 +1,11 @@
+figure img {
+    width: 50%;
+  }
+
+#img-gallery img {
+    transition: opacity 0.5s linear;
+}
+
+.opacityChange {
+    opacity: 0.3;
+  }

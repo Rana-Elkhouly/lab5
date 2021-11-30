@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myForm" action="thanks.html" method="get">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+
+        <label for="fullName"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter your Name:" name="fullName" id="fullName" required>
+        <span id="invalidName"></span><br>
+        <script>
+            function blueBorder(x) {
+                x.style.background = "yellow";
+            }
+        </script>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+        <label for="city"><b>Choose your city:</b></label>
+        <select name="city" id="city">
+            <option value="Cairo">Cairo</option>
+            <option value="Alex">Alex</option>
+            <option value="Tanta">Tanta</option>
+            <option value="Minia">Minia</option>
+        </select><br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <span id="invalidPass"></span><br>
+        <label for="terms">I accept the terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms"><br>
+        <img id="invalid" src="" alt="">
+        <button>register</button><span id="validate"></span>
+
+    </form>
+
+    <div class="gallery">
+        <figure>
+            <img src="2.jpg" alt="" id="img" />
+        </figure>
+        <button id="play">play</button>
+        <button id="stop">stop</button>
+        <button id="next">next</button>
+        <button id="previous">previous</button>
+    </div>
+
+    <div id="img-gallery">
+        <img src="2.jpg" alt="" />
+        <img src="3.jpg" alt="" />
+        <img src="4.jpg" alt="" />
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>
